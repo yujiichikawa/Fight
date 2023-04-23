@@ -32,7 +32,7 @@ public class Luta {
 				continue;
 			}
 		}
-		System.out.println("Luta Finalizada:\nVendedor:\n"+getVencedor().toString());
+		System.out.println("Luta Finalizada:\nVendedor:\n"+getVencedor().toStringBasic()+"\n"+getVencedor().toString());
 	}
 
 	public Lutador getLutador01() {
