@@ -1,5 +1,8 @@
 package com.yuji.model;
 
+import com.yuji.enums.EnumArm;
+import com.yuji.enums.EnumArma;
+import com.yuji.enums.EnumNivel;
 import com.yuji.interfaces.ILutador;
 
 import com.yuji.model.Lutador;
@@ -62,7 +65,7 @@ public class Lutador extends Pessoa implements ILutador {
 			lutador.receberDano(this);
 		}else {
 			lutador.receberDano(this);
-			System.out.println("Lutador:"+lutador.getName()+"\n-> Derrotado");
+			System.out.println("Lutador:"+lutador.getNome()+"\n-> Derrotado");
 		}
 	}
 
@@ -140,6 +143,6 @@ public class Lutador extends Pessoa implements ILutador {
 	}
 	
 	public String toStringBasic() {
-		return "Lutador:"+getName()+"\nvida=" + vida;
+		return "Lutador:"+getNome()+"\nvida=" + vida;
 	}
 }
