@@ -6,11 +6,10 @@ public abstract class Pessoa {
 	private float peso;
 	private String historia;
 	
-	public Pessoa(String nome, int idade, float peso, String historia) {
+	public Pessoa(String nome, int idade, float peso) {
 		this.nome = nome;
 		this.idade = idade;
 		this.peso = peso;
-		this.historia = historia;
 	}
 
 	public String getNome() {
